@@ -1,0 +1,518 @@
+
+
+
+
+
+
+#headerweb{
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+    z-index: 99;
+    
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    display: none;
+   
+ 
+   
+}
+
+
+#headerweb  ul li{
+    display: inline;
+    padding: 30px;
+    
+}
+#headerweb ul li a{
+    text-decoration: none;
+    color: black;
+}
+#headerweb img{
+    margin-left: 30px;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+ 
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: 0 5px;
+    background-color:rgba(250, 179, 98, 0.846);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: rgba(255, 136, 0, 0.846);
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade  {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+
+#gallery{
+    margin-bottom: 100px;
+}
+#gallery h3{
+    margin-bottom: 30px;
+  
+}
+
+
+
+
+
+
+
+ 
+
+#banner{
+     background-image:url(../img/dan-senior-qp16Xm2EweY-unsplash.jpg);
+  
+   
+    background-size: cover; 
+     height: 100vh;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+
+#banner h1{
+    color: white;
+}
+#banner i{
+    color: white;
+    padding: 30px;
+}
+@keyframes chayxuong{
+    0%{
+        transform: translate(0,0);
+    }
+    50%{
+        transform: translate(0, 28px);
+    }
+    100%{
+        transform: translate(0, 0);
+    }
+    }
+.nutchay{
+    animation: chayxuong 1s infinite;
+
+}
+#about{
+    margin: 100px 0;
+   
+  
+}
+
+#about img{
+    width: 100%;
+    
+}
+#about p{
+    display: flex;
+    margin-top: 10px ;
+}
+.noidungtrai{
+   /* align-self: center; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    
+}
+.download{
+    text-decoration: none;
+    color:#ffffff;
+    background-color:rgba(255, 136, 0, 0.846) ;
+    border: 1px solid rgba(255, 136, 0, 0.846);
+    border-radius: 10px;
+    padding: 5px;
+    width: 150px;
+    margin-top: 5px;
+   
+ 
+}
+
+#mybtn{
+    background-color: transparent;
+    border: none;
+    color: rgba(255, 136, 0, 0.846);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    display: none;
+    
+}
+
+
+body{
+    scroll-behavior: smooth;
+}
+#skill{
+   
+    margin-bottom: 100px;
+    margin-top: 50px;
+ 
+}
+
+#skill h3{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#skill i{
+   color: rgba(255, 136, 0, 0.846);
+}
+
+.khung{
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px ;
+    border: 1px solid rgba(255, 136, 0, 0.846);
+    margin: 0 60px;
+}
+
+
+.tabcontent img{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+
+    border-radius: 3%;
+    display: block;
+
+    
+
+}
+
+.tabcontent img:hover{
+
+    box-shadow: 0px 16px 22px 0px rgb(90 91 95 / 30%);
+    top: -5px;
+}
+    
+
+.tabcontent{
+    animation: fadeEffect 1s ;
+
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+
+  
+.tab button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition: 0.6s;
+}
+.tab button:hover{
+    background-color: rgba(255, 136, 0, 0.846);
+    border: 2px solid rgba(255, 136, 0, 0.846);
+}
+.tab{
+    overflow: hidden;
+    /* padding: 0 200px; */
+  
+}
+.tablinks{
+    border-radius: 5%;
+    margin: 20px 0;
+}
+.icontron{
+   
+    color:rgba(255, 136, 0, 0.846);
+}
+.margin{
+    margin-top: 30px;
+}
+.icon{
+    padding: 10px 0;
+    background:white;
+   
+    
+}
+
+
+.icon h4{
+    margin-top: 5px;
+    
+}
+#contact input{
+    width: 100%;
+    padding: 5px 5px;
+    margin-top: 10px;
+    
+    border: none;
+    border-bottom: 1px solid rgba(255, 136, 0, 0.846);
+    outline: none;
+
+}
+#contact textarea{
+    padding: 5px 5px 100px;
+    width: 100%;
+
+    
+    border: none;
+    border-bottom: 1px solid rgba(255, 136, 0, 0.846);
+   
+    margin-top: 10px;
+    outline: none;
+    
+    
+}
+#contact button{
+    padding: 10px;
+    border: 1px solid rgba(255, 136, 0, 0.846);
+    border-radius: 20px;
+    background-color: transparent;
+    
+}
+#contact input,textarea:hover{
+  color: rgba(255, 136, 0, 0.846);
+    
+}
+
+#contact{
+    padding: 50px 350px;
+    height: 100vh;
+    background: rgb(246,241,226);
+    background: linear-gradient(90deg, rgba(246,241,226,1) 0%, rgba(252,235,226,1) 46%, rgba(249,203,232,1) 100%);
+
+    
+}
+ #contact h3{
+    animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both infinite;
+}
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  
+#contact button:hover{
+    background-color: rgba(255, 136, 0, 0.846);
+    transition: 0.3s;
+    color: white;
+}
+.maucam{
+    padding: 7px;
+    border: 1px solid rgba(255, 136, 0, 0.846) ;
+    border-radius: 10px;
+    background-color: rgba(255, 136, 0, 0.846);
+
+}
+
+.map{
+    width: 100%;
+   
+   
+    height: 374px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  
+}
+.bentrai{
+    background-color: white;
+    padding: 20px;
+   
+}
+
+@media screen and (max-width: 414px){
+    h1{
+        color:red !important;
+        font-size: 60px !important;
+      
+    }
+    .col-6{
+        width: 100% !important;
+    }
+    #about img{
+        width: 25%;
+    }
+    .row{
+        flex-direction: column;
+    }
+}
+@media screen and (min-width:415px) and(max-width:768px){
+    h1{
+        color: red !important;
+        font-size: 90px !important;
+    }
+}
+
+
+
+.footer{
+    margin-top: 100px;
+    background: #f9f8df;
+    padding: 20px 0; 
+    color:#272D4E ;
+}
+.footer hr{
+   
+    border: 0.1px solid rgba(239, 184, 121, 0.846) !important ;
+}
+
+
+
+
+
+
+
+.bentrai1{
+  margin: 30px 0;
+  
+}
+.bentrai1 i{
+    margin-top: 30px;
+}
+
+
+
+.benphai h3{
+    font-size: 16px;
+}
+.benphai ul{
+    list-style-type: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.benphai h4{
+    color:rgba(255, 136, 0, 0.846);
+}
+.benphai li{
+    padding:  5px ;
+}
+.copyright{
+    
+    margin-top: 30px;
+    font-weight: bold;
+    /* text-align: center; */
+}
+
+
+.hinh i{
+    color:#272D4E;
+   
+ 
+}
+
+.bentrai1 i{
+    color:rgba(255, 136, 0, 0.846);
+    padding: 0 30px;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
